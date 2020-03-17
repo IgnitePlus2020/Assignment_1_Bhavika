@@ -1,15 +1,16 @@
 package com.tgt.igniteplus;
 import java.util.*;
 public class frac_whole {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the value: ");
-        double value = in.nextDouble();
-        double fractional_part = value % 1;
-        double whole_part = value - fractional_part;
-        System.out.print("\nOriginal value: "+value);
-        System.out.print("\nWhole part: "+whole_part);
-        System.out.print("\nFractional part: "+fractional_part);
-        System.out.println();
-    }
+        double og,b;
+        int a;
+        System.out.println("Enter a number : \n");
+        og = in.nextDouble();
+        a = (int)og;
+        b = og - a;
+        int l = Double.toString(b).length()-2;
+        b = b * Math.pow(10,l);
+        int c = (int)b;
+        System.out.println( a + " " + c);
 }
